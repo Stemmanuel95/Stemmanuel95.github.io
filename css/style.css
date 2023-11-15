@@ -160,7 +160,7 @@ footer {
 
 
 .hero-section-index {
-    background-image: url('images/black-friday-sales-arrangement-with-shopping-cart.jpg');
+    background-image: url('/images/black-friday-sales-arrangement-with-shopping-cart.jpg');
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -168,7 +168,7 @@ footer {
 }
 
 .hero-section-products {
-    background-image: url('images/modern-stationary-collection-arrangement.jpg');
+    background-image: url('/images/modern-stationary-collection-arrangement.jpg');
     background-size: cover;
     /*color: #fff;*/
     text-align: center;
