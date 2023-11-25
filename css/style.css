@@ -173,7 +173,7 @@ button:hover {
 }
 
 .hero-section-products {
-    background-image: url('images/modern-stationary-collection-arrangement.jpg');
+    background-image: url('/images/modern-stationary-collection-arrangement.jpg');
     background-size: cover;
     /*color: #fff;*/
     text-align: center;
@@ -181,7 +181,7 @@ button:hover {
 }
 
 .graphics {
-    background-image: url('images/graphic_background.jpg');
+    background-image: url('/images/graphic_background.jpg');
     background-size: cover;
     text-align: center;
     padding: 180px 20px;
