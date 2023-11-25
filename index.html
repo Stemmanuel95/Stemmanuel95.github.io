@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo1.png" type="image/gif" />
     <title>Globalticket website</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <header class="hero-header">
-        <link rel="icon" href="images/logo1.png" type="image/gif" />
+    <header>
+        <!--Header logo-->
+    <!-- <header class="hero-header">
+        <link rel="icon" href="images/logo.png" type="image/gif" />
         <div class="logo-container">
-        <a href="{{ url_for('index') }} class="logo">
-            <img src="images/logo1.png" alt="Globalticket Logo">
+        <a href="{{ url_for('index') }}" class="logo">
+            <img src="images/logo.png" alt="Globalticket Logo">
         </a>
-        </div>
-    <div class="header-content">
-        <h1>Welcome to Globalticket</h1>
+        </div> -->
+
+        <div class="logo-container">
+            <a href="/index.html" class="logo">
+                <img src="images/logo.png" alt="Globalticket Logo">
+            </a>
+            </div>
+
+    <!--Navigation tabs on the site-->
+    <div class="header-content-alignment">       
         <nav>
             <ul>
-                <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="{{ url_for('products') }}">Products</a></li>
-                <li><a href="{{ url_for('cart') }}">Cart</a></li>
-                <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
-                <li><a href="{{ url_for('account') }}">Account</a></li>                
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/products_list.html">Products</a></li>
+                <li><a href="/cart.html">Cart</a></li>
+                <li><a href="/contact_us.html">Contact Us</a></li>
+                <li><a href="/account.html">Account</a></li>                
             </ul>
         </nav>
+    
     </div>
     </header>
-
+    
+    
+    
+    <!--Introduction header-->
     <section class="hero-section hero-section-index">
+        <h1>Welcome to Globalticket</h1>
         <h2>Discover Amazing Products</h2>
         <p>Find the latest and greatest products at Globalticket.</p>
-        <a href="{{ url_for('products') }}" class="explore-button">Explore Now</a>
+        <a href="/product_list.html" class="explore-button">Explore Now</a>
     </section>
 
+    <!--List of available products on the site-->
     <section class="product-list-index">
         <article class="product-index">
-            <img src="images/laptop-img.png" alt="Product 1">
+            <img src="static/images/laptop-img.png" alt="Product 1">
             <h2>Laptop</h2>
             <p>HP envy 2022 edition</p>
             <p>Price: $10.00</p>
@@ -44,12 +60,13 @@
             <button>See More</button>
         </article>
         <article class="product-index">
-            <img src="images/Macbook.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>Macbook 2022</p>
-            <p>Price: $399.00</p>
-            <button>Add to Cart</button>
-            <button>See More</button>
+            <img src="images/Macbook.jpg" alt="Graphic designs">
+            <h2>Design Services</h2>
+            <p>Flyers/Banners/Posters/Logos</p>
+            <p>And Many more</p>
+            <!-- <button>Add to Cart</button> -->
+            <!-- <button>See More</button> -->
+            <a href="/graphic_designs.html" class="explore-button">See Samples</a>
         </article>
         <article class="product-index">
             <img src="images/mobile-img.png" alt="Product 3">
@@ -61,6 +78,8 @@
         </article>
         
     </section>
+
+    <!--Brief section about us-->
     <section class="about-section">
         <h2>We Provide the Best for you</h2>
         <p>
@@ -70,17 +89,21 @@
 
     </section>
 
+    <!--Benefits section-->
     <section class="benefits-section">
         <h2>Why Choose Globalticket</h2>
         <ul>
-            <li>Wide Selection of Products</li>
+        <strong>
+            <li>Selection of Products</li>
             <li>Quality Assurance</li>
             <li>Secure Online Shopping</li>
             <li>Fast and Reliable Delivery</li>
             <li>Responsive Customer Support</li>
+        </strong>
         </ul>
     </section>
 
+    <!--Category of services we deal with -->
     <section class="categories-section">
         <h2>Explore Our Categories</h2>
         <div class="category">
@@ -97,6 +120,7 @@
         </div>
     </section>
 
+    <!--Section for testimonials -->
     <section class="testimonials-section">
         <h2>What Our Customers Say</h2>
         <div class="testimonial">
@@ -109,14 +133,18 @@
         </div>
     </section>
 
-    <!-- 8. Call-to-Action Section -->
+    <!--Call-to-Action Section -->
     <section class="cta-section">
         <h2>Ready to Shop?</h2>
         <p>Explore our products and experience the best in online shopping. Join Globalticket today!</p>
-        <a href="{{ url_for('products') }}" class="explore-button">Start Shopping</a>
+        <a href="product_list.html" class="explore-button">Start Shopping</a>
     </section>
 
     <footer>
+        <h3>Globalticket</h3>
+            <p>Paradise Residential Area, Accra, Ghana</p>
+            <p>Email: info@globalticket.com</p>
+            <p>Phone: +233 209-500-133</p>
         <p>&copy; 2023 All rights Reserved by Globalticket</p>
     </footer>
 </body>
