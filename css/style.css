@@ -165,6 +165,7 @@ button:hover {
 
 
 .hero-section-index {
+    /* background-image: url('/images/black-friday-sales-arrangement-with-shopping-cart.jpg'); */
     background-image: url('/images/top-view-work-desk-with-coffee-keyboard.jpg');
     background-size: cover;
     color: #fff;
@@ -423,13 +424,10 @@ button:hover {
     text-align: center;
     max-width: 200px;
     background-color: #f9f9f9;
-    box-sizing: border-box;
 }
 
 .product-graphics img {
     max-width: 100%;
-    width: 100%;
-    height: auto;
 }
 
 .product-graphics button {
@@ -449,45 +447,4 @@ button:hover {
     .product-graphics {
         max-width: 100%; /* Adjust the width as needed for smaller screens */
     }
-
-    header h1 {
-        font-size: 20px; /* Adjust the font size for smaller screens */
-    }
-
-    nav ul {
-        font-size: 16px; /* Adjust the font size for the navigation menu on smaller screens */
-    }
-
-    nav ul li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 10px; /* Add some space between navigation items */
-    }
-
-    .product, .product-index, .product-graphics {
-        max-width: 100%; /* Adjust the width for product boxes on smaller screens */
-        padding: 20px; /* Adjust the padding for better spacing on smaller screens */
-    }
-
-    .hero-section h2,
-    .hero-section p,
-    .hero-section-products h2,
-    .hero-section-products p,
-    .graphics h1,
-    .graphics p {
-        font-size: 24px; /* Adjust the font size for hero sections and graphics on smaller screens */
-    }
-
-    .cta-section h2,
-    .cta-section p {
-        font-size: 20px; /* Adjust the font size for CTA section on smaller screens */
-        margin-bottom: 20px; /* Add some space between heading and paragraph */
-    }
-
-    .cta-section .explore-button {
-        font-size: 16px; /* Adjust the font size for the explore button on smaller screens */
-    }
-
-    /* Add more specific adjustments as needed */
-}
 }
